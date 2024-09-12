@@ -1,4 +1,4 @@
-package com.spring;
+package com.spring.ioc;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Mainn {
@@ -7,7 +7,7 @@ public class Mainn {
 
         // load the spring configuration file
         ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("applicationContext.xml");
+                new ClassPathXmlApplicationContext("com/spring/applicationContext.xml");
         // retrieve bean from spring container
         Sport foot = context.getBean("mysport",Sport.class);
         foot.start();
