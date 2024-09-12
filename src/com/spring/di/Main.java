@@ -8,13 +8,13 @@ public class Main {
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("com/spring/applicationContext.xml");
         // retrieve bean from spring container
-        Interfaceperson person= context.getBean("person",Interfaceperson.class);
+       // Interfaceperson person= context.getBean("person",Interfaceperson.class);
 
 
         InterfaceUser user= context.getBean("user",InterfaceUser.class);
 
-        person.begin();
-        user.start();
+      //  person.begin();
+        user.getPerson();
 
 
         context.close();
