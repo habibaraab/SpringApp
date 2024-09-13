@@ -3,9 +3,7 @@ package com.spring.di;
 public class User implements InterfaceUser{
 
     private  Interfaceperson person;
-
-    public User(Interfaceperson person) {
-
+    public void setPerson(Interfaceperson person) {
         this.person = person;
     }
 

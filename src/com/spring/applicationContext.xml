@@ -12,7 +12,7 @@
     </bean>
 
     <bean id="user" class="com.spring.di.User">
-       <constructor-arg ref="person"></constructor-arg>
+     <property name="person" ref="person"></property>
     </bean>
 
 
