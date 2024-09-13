@@ -13,6 +13,10 @@
 
     <bean id="user" class="com.spring.di.User">
      <property name="person" ref="person"></property>
+
+       <property name="email" value="bia@gmail.com"></property>
+       <property name="team" value="Acpc"></property>
+
     </bean>
 
 

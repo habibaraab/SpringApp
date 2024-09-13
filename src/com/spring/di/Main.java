@@ -14,7 +14,8 @@ public class Main {
         InterfaceUser user= context.getBean("user",InterfaceUser.class);
 
       //  person.begin();
-        user.getPerson();
+       // user.getPerson();
+        System.out.println(user.getEmail()+" "+user.getTeam());
 
 
         context.close();
