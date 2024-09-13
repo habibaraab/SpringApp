@@ -11,11 +11,12 @@
     <bean id="person" class="com.spring.di.Person">
     </bean>
 
+   <context:property-placeholder location="data.properties"></context:property-placeholder>
     <bean id="user" class="com.spring.di.User">
      <property name="person" ref="person"></property>
 
-       <property name="email" value="bia@gmail.com"></property>
-       <property name="team" value="Acpc"></property>
+       <property name="email" value="${us.email}"></property>
+       <property name="team" value="${us.team}"></property>
 
     </bean>
 

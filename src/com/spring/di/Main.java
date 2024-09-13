@@ -11,12 +11,11 @@ public class Main {
        // Interfaceperson person= context.getBean("person",Interfaceperson.class);
 
 
-        InterfaceUser user= context.getBean("user",InterfaceUser.class);
+        User user= context.getBean("user",User.class);
 
+        user.start();
       //  person.begin();
        // user.getPerson();
-        System.out.println(user.getEmail()+" "+user.getTeam());
-
 
         context.close();
 
