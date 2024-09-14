@@ -13,6 +13,8 @@ public class Main {
         /*System.out.println(sport);
         System.out.println(sport1);
         System.out.println(sport==sport1);*/
+
+        sport1.getSport();
         context.close();
     }
 }
