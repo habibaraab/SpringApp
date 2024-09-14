@@ -1,6 +1,10 @@
 package com.spring.di;
 
-public class Person implements Interfaceperson {
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Person implements Interfaceperson  {
 
     public void begin(){
 

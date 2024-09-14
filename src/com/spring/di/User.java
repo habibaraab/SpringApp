@@ -1,30 +1,21 @@
 package com.spring.di;
 
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("user")
 public class User implements InterfaceUser{
+    private Interfaceperson person;
 
-    private  Interfaceperson person;
-    private String email;
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getTeam() {
-        return team;
-    }
-
-    public void setTeam(String team) {
-        this.team = team;
-    }
-
-    private String team;
+    @Autowired
     public void setPerson(Interfaceperson person) {
         this.person = person;
     }
+
+
+
+
 
     public void start(){
 
@@ -34,4 +25,6 @@ public class User implements InterfaceUser{
     public void getPerson(){
         this.person.begin();
     }
+
+
 }

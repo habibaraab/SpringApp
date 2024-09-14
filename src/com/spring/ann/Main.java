@@ -8,6 +8,11 @@ public class Main {
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("com/spring/applicationContext.xml");
         InterfaceMaster sport = context.getBean("master", InterfaceMaster.class);
-        sport.getSport();
+        InterfaceMaster sport1 = context.getBean("master", InterfaceMaster.class);
+
+        /*System.out.println(sport);
+        System.out.println(sport1);
+        System.out.println(sport==sport1);*/
+        context.close();
     }
 }
